@@ -3,7 +3,6 @@
 #################
 
 *.pydevproject
-.project
 .metadata
 bin/
 tmp/
@@ -15,7 +14,12 @@ local.properties
 .classpath
 .settings/
 .loadpath
-
+**/*.class
+target/
+Servers/**
+*.lnk
+.gitignore
+dist/
 # External tool builders
 .externalToolBuilders/
 
@@ -27,6 +31,14 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+#################
+## IntelIJ
+#################
+.idea
+*.iml
+.project
+**/bin
 
 
 #################
@@ -105,7 +117,7 @@ _TeamCity*
 *.dotCover
 
 # NCrunch
-*.ncrunch*
+.ncrunch
 .*crunch*.local.xml
 
 # Installshield output folder
@@ -127,7 +139,6 @@ publish/
 # Publish Web Output
 *.Publish.xml
 *.pubxml
-*.publishproj
 
 # NuGet Packages Directory
 ## TODO: If you have NuGet Package Restore enabled, uncomment the next line
@@ -188,12 +199,11 @@ $RECYCLE.BIN/
 ## Python
 #############
 
-*.py[cod]
+*.py[co]
 
 # Packages
 *.egg
 *.egg-info
-dist/
 build/
 eggs/
 parts/
@@ -214,3 +224,19 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#Eclipse project specific configurations
+**/*.project
+.gitignore
+*.bpmn2d
+
+vendor/
+node_modules/
+bower_components/
+ui/jaggeryapps/adminui/gadgets/
+services/patient-service/NewFile.xml
+
+## PME
+
+!tvapps/modular-tv-guide/WEB-INF/classes/*.class
+analytics/ws/logs/analytics_trace.log.*
