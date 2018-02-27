@@ -1,4 +1,4 @@
-package com.example.model;
+package com.ucan.userservice.model;
 
 import org.springframework.data.annotation.Id;
 

@@ -1,8 +1,8 @@
-package com.example.repository;
+package com.ucan.userservice.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.example.model.User;
+import com.ucan.userservice.model.User;
 
 public interface UserRepository extends MongoRepository<User, String> {
 
